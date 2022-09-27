@@ -10,7 +10,7 @@ import {
   MintFunction,
   FlashFunction,
   SwapToPriceFunction,
-} from '../test/shared/utilities'
+} from '../original-test/shared/utilities'
 import { TestAlgebraCallee } from '../typechain/TestAlgebraCallee'
 
 import * as fs from "fs"

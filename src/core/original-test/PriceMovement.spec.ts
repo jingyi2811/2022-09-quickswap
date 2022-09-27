@@ -1,11 +1,11 @@
 import { BigNumber } from 'ethers'
 import { ethers } from 'hardhat'
-import { PriceMovementMathTest } from '../typechain/test/PriceMovementMathTest'
+import { PriceMovementMathTest } from '../typechain/original-test/PriceMovementMathTest'
 
 import { expect } from './shared/expect'
 import snapshotGasCost from './shared/snapshotGasCost'
 import { encodePriceSqrt, expandTo18Decimals } from './shared/utilities'
-import { TokenDeltaMathTest } from '../typechain/test/TokenDeltaMathTest'
+import { TokenDeltaMathTest } from '../typechain/original-test/TokenDeltaMathTest'
 
 describe('PriceMovementMath', () => {
   let PriceMovementMath: PriceMovementMathTest

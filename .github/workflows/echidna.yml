@@ -49,7 +49,7 @@ jobs:
         uses: crytic/echidna-action@v2
         with:
           solc-version: 0.7.6
-          files: ./src/core/contracts/test/${{ matrix.testName }}.sol
+          files: ./src/core/contracts/original-test/${{ matrix.testName }}.sol
           contract: ${{ matrix.testName }}
           crytic-args: --hardhat-ignore-compile
           config: ./src/core/echidna.config.yml

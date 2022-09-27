@@ -1,5 +1,5 @@
 import { expect } from './shared/expect'
-import { AdaptiveFeeTest } from '../typechain/test/AdaptiveFeeTest'
+import { AdaptiveFeeTest } from '../typechain/original-test/AdaptiveFeeTest'
 import { ethers } from 'hardhat'
 import { loadFixture } from '@nomicfoundation/hardhat-network-helpers';
 import snapshotGasCost from './shared/snapshotGasCost'

@@ -1,7 +1,7 @@
 import { BigNumber, BigNumberish, Wallet } from 'ethers'
 import { ethers } from 'hardhat'
 import { loadFixture } from '@nomicfoundation/hardhat-network-helpers';
-import { DataStorageTest } from '../typechain/test/DataStorageTest'
+import { DataStorageTest } from '../typechain/original-test/DataStorageTest'
 import { DataStorageOperator } from '../typechain/DataStorageOperator'
 import checkTimepointEquals from './shared/checkTimepointEquals'
 import { expect } from './shared/expect'
@@ -33,7 +33,7 @@ describe('DataStorage', () => {
 
   describe('#initialize', () => {
     let dataStorage: DataStorageTest
-    beforeEach('deploy test dataStorage', async () => {
+    beforeEach('deploy original-test dataStorage', async () => {
       dataStorage = await loadFixture(dataStorageFixture)
     })
     it('cannot initialize twice', async () => {
@@ -68,7 +68,7 @@ describe('DataStorage', () => {
   describe('#write', () => {
     let dataStorage: DataStorageTest
 
-    beforeEach('deploy initialized test dataStorage', async () => {
+    beforeEach('deploy initialized original-test dataStorage', async () => {
       dataStorage = await loadFixture(initializedDataStorageFixture)
     })
 
@@ -129,7 +129,7 @@ describe('DataStorage', () => {
 
   describe('#getAverageTick', () => {
     let dataStorage: DataStorageTest
-    beforeEach('deploy initialized test dataStorage', async () => {
+    beforeEach('deploy initialized original-test dataStorage', async () => {
       dataStorage = await loadFixture(dataStorageFixture)
     })
 
@@ -159,7 +159,7 @@ describe('DataStorage', () => {
   describe('#getTimepoints', () => {
     describe('before initialization', async () => {
       let dataStorage: DataStorageTest
-      beforeEach('deploy test dataStorage', async () => {
+      beforeEach('deploy original-test dataStorage', async () => {
         dataStorage = await loadFixture(dataStorageFixture)
       })
 

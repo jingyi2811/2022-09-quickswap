@@ -1,6 +1,6 @@
 import { BigNumber, constants } from 'ethers'
 import { ethers } from 'hardhat'
-import { TokenDeltaMathTest } from '../typechain/test/TokenDeltaMathTest'
+import { TokenDeltaMathTest } from '../typechain/original-test/TokenDeltaMathTest'
 
 import { expect } from './shared/expect'
 import snapshotGasCost from './shared/snapshotGasCost'
@@ -164,7 +164,7 @@ describe('TokenDeltaMath', () => {
       expect(sqrtQ).to.eq('77371252455336267181195264')
     })
 
-    it('puzzling echidna test', async () => {
+    it('puzzling echidna original-test', async () => {
       const price = '20282409603651670423947251286016'
       const liquidity = 1024
       const amountOut = 4

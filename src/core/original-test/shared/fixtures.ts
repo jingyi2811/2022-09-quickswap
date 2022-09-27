@@ -1,12 +1,12 @@
 import { BigNumber } from 'ethers'
 import { ethers } from 'hardhat'
-import { MockTimeAlgebraPool } from '../../typechain/test/MockTimeAlgebraPool'
-import { TestERC20 } from '../../typechain/test/TestERC20'
+import { MockTimeAlgebraPool } from '../../typechain/original-test/MockTimeAlgebraPool'
+import { TestERC20 } from '../../typechain/original-test/TestERC20'
 import { AlgebraFactory } from '../../typechain/AlgebraFactory'
 import { DataStorageOperator } from "../../typechain/DataStorageOperator";
-import { TestAlgebraCallee } from '../../typechain/test/TestAlgebraCallee'
-import { TestAlgebraRouter } from '../../typechain/test/TestAlgebraRouter'
-import { MockTimeAlgebraPoolDeployer } from '../../typechain/test/MockTimeAlgebraPoolDeployer'
+import { TestAlgebraCallee } from '../../typechain/original-test/TestAlgebraCallee'
+import { TestAlgebraRouter } from '../../typechain/original-test/TestAlgebraRouter'
+import { MockTimeAlgebraPoolDeployer } from '../../typechain/original-test/MockTimeAlgebraPoolDeployer'
 
 import { AlgebraPoolDeployer } from "../../typechain/AlgebraPoolDeployer";
 

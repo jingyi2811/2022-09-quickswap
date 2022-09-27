@@ -23,5 +23,5 @@ jobs:
       - run: npm run ci-install
       - run: npm run compile
         working-directory: ./src/core
-      - run: npm run test
+      - run: npm run original-test
         working-directory: ./src/core

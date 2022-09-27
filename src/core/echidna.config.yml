@@ -15,13 +15,13 @@ coverage: false
 # testMaxGas: 8000030
 # #maxGasprice is the maximum gas price
 # maxGasprice: 100000000000
-# #testLimit is the number of test sequences to run
+# #testLimit is the number of original-test sequences to run
 # testLimit: 50000
 # #stopOnFail makes echidna terminate as soon as any property fails and has been shrunk
 # stopOnFail: false
 # #estimateGas makes echidna perform analysis of maximum gas costs for functions (experimental)
 # estimateGas: false
-# #seqLen defines how many transactions are in a test sequence
+# #seqLen defines how many transactions are in a original-test sequence
 # seqLen: 100
 # #shrinkLimit determines how much effort is spent shrinking failing sequences
 # shrinkLimit: 5000
@@ -49,7 +49,7 @@ coverage: false
 # multi-abi: false
 # #benchmarkMode enables benchmark mode
 # benchmarkMode: false
-# #timeout controls test timeout settings
+# #timeout controls original-test timeout settings
 # timeout: null
 # #seed not defined by default, is the random seed
 # #seed: 0

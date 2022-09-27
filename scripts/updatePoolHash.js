@@ -25,6 +25,6 @@ updateHash(
 );
 
 updateHash(
-    '../src/core/artifacts/contracts/test/simulation/SimulationTimeAlgebraPool.sol/SimulationTimeAlgebraPool.json', 
-    ['../src/core/contracts/test/simulation/SimulationTimeFactory.sol']
+    '../src/core/artifacts/contracts/original-test/simulation/SimulationTimeAlgebraPool.sol/SimulationTimeAlgebraPool.json',
+    ['../src/core/contracts/original-test/simulation/SimulationTimeFactory.sol']
 );

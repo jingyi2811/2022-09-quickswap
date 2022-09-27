@@ -12,6 +12,8 @@
     "typeRoots": ["./typechain", "./node_modules/@types"],
     "types": ["@nomiclabs/hardhat-ethers", "@nomicfoundation/hardhat-chai-matchers"]
   },
-  "include": ["./test/**/*"],
+  "include": [
+    "./original-test/**/*"
+  ],
   "files": ["./hardhat.config.ts"]
 }

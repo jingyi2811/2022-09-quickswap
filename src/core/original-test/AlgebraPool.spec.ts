@@ -1,11 +1,11 @@
 import { ethers } from 'hardhat'
 import { BigNumber, BigNumberish, constants, Wallet } from 'ethers'
 import { loadFixture } from '@nomicfoundation/hardhat-network-helpers';
-import { TestERC20 } from '../typechain/test/TestERC20'
+import { TestERC20 } from '../typechain/original-test/TestERC20'
 import { AlgebraFactory } from '../typechain/AlgebraFactory'
-import { MockTimeAlgebraPool } from '../typechain/test/MockTimeAlgebraPool'
-import { MockTimeVirtualPool } from '../typechain/test/MockTimeVirtualPool'
-import { TestAlgebraSwapPay } from '../typechain/test/TestAlgebraSwapPay'
+import { MockTimeAlgebraPool } from '../typechain/original-test/MockTimeAlgebraPool'
+import { MockTimeVirtualPool } from '../typechain/original-test/MockTimeVirtualPool'
+import { TestAlgebraSwapPay } from '../typechain/original-test/TestAlgebraSwapPay'
 import checkTimepointEquals from './shared/checkTimepointEquals'
 import { expect } from './shared/expect'
 
@@ -28,10 +28,10 @@ import {
   MIN_SQRT_RATIO,
   SwapToPriceFunction,
 } from './shared/utilities'
-import { TestAlgebraCallee } from '../typechain/test/TestAlgebraCallee'
-import { TestAlgebraReentrantCallee } from '../typechain/test/TestAlgebraReentrantCallee'
-import { TickMathTest } from '../typechain/test/TickMathTest'
-import { PriceMovementMathTest } from '../typechain/test/PriceMovementMathTest'
+import { TestAlgebraCallee } from '../typechain/original-test/TestAlgebraCallee'
+import { TestAlgebraReentrantCallee } from '../typechain/original-test/TestAlgebraReentrantCallee'
+import { TickMathTest } from '../typechain/original-test/TickMathTest'
+import { PriceMovementMathTest } from '../typechain/original-test/PriceMovementMathTest'
 
 
 type ThenArg<T> = T extends PromiseLike<infer U> ? U : T
@@ -2264,7 +2264,7 @@ describe('AlgebraPool', () => {
 
   describe('swap underpayment tests', () => {
     let underpay: TestAlgebraSwapPay
-    beforeEach('deploy swap test', async () => {
+    beforeEach('deploy swap original-test', async () => {
       const underpayFactory = await ethers.getContractFactory('TestAlgebraSwapPay')
       underpay = (await underpayFactory.deploy()) as TestAlgebraSwapPay
       await token0.approve(underpay.address, constants.MaxUint256)

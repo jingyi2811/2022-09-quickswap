@@ -1,9 +1,9 @@
 import { Wallet } from 'ethers'
 import { ethers } from 'hardhat'
 import { loadFixture } from '@nomicfoundation/hardhat-network-helpers';
-import { TestERC20 } from '../typechain/test/TestERC20'
+import { TestERC20 } from '../typechain/original-test/TestERC20'
 import { AlgebraFactory } from '../typechain/AlgebraFactory'
-import { MockTimeAlgebraPool } from '../typechain/test/MockTimeAlgebraPool'
+import { MockTimeAlgebraPool } from '../typechain/original-test/MockTimeAlgebraPool'
 import { expect } from './shared/expect'
 
 import { poolFixture } from './shared/fixtures'
@@ -18,8 +18,8 @@ import {
   getMaxTick,
   expandTo18Decimals,
 } from './shared/utilities'
-import { TestAlgebraRouter } from '../typechain/test/TestAlgebraRouter'
-import { TestAlgebraCallee } from '../typechain/test/TestAlgebraCallee'
+import { TestAlgebraRouter } from '../typechain/original-test/TestAlgebraRouter'
+import { TestAlgebraCallee } from '../typechain/original-test/TestAlgebraCallee'
 
 const feeAmount = FeeAmount.MEDIUM
 const tickSpacing = 60

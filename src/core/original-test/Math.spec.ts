@@ -1,6 +1,6 @@
 import { ethers } from 'hardhat'
-import { FullMathTest } from '../typechain/test/FullMathTest'
-import { SafeMathTest } from '../typechain/test/SafeMathTest'
+import { FullMathTest } from '../typechain/original-test/FullMathTest'
+import { SafeMathTest } from '../typechain/original-test/SafeMathTest'
 import { expect } from './shared/expect'
 import { Decimal } from 'decimal.js'
 
